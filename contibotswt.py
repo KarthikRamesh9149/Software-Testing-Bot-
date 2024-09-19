@@ -105,8 +105,8 @@ st.markdown("""
 nltk.download('wordnet')
 
 # Set the dataset and image paths
-DATASET_PATH = r'C:\Users\uig83773\Desktop\Software Testing Bot using LLM\FinalDataset.json'
-IMAGE_DIR = r'C:\Users\uig83773\Desktop\Software Testing Bot using LLM\images'
+DATASET_PATH ='FinalDataset.json'
+IMAGE_DIR = 'images'
 
 # Load JSON FAQ data with caching
 @st.cache
