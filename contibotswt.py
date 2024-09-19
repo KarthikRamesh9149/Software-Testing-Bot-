@@ -16,6 +16,16 @@ warnings.filterwarnings("ignore")
 # Set up Streamlit page configuration
 st.set_page_config(page_title="Software Testing FAQ Chatbot", page_icon="🟠", layout="centered")
 
+# Add this CSS to hide the "View Source" button
+st.markdown("""
+    <style>
+    [data-testid="stToolbar"] {
+        visibility: hidden;
+        height: 0px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Custom CSS for improved button responsiveness and consistent answer background styling
 st.markdown("""
     <style>
